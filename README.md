@@ -1,4 +1,4 @@
-- [1. ng-jest-cypress-template](#1-ng-jest-cypress-template)
+- [1. ng-test](#1-ng-test)
   - [1.1. Create project](#11-create-project)
   - [1.2. Add eslint](#12-add-eslint)
   - [1.3. Add prettier](#13-add-prettier)
@@ -25,14 +25,14 @@
       - [1.5.6.1. Add po.ts](#1561-add-pots)
       - [1.5.6.2. Add angular.spec.ts](#1562-add-angularspects)
 
-# 1. ng-jest-cypress-template
+# 1. ng-test
 
 ## 1.1. Create project
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.8.
 
 ```bash
-ng new ng-jest-cypress-template --style=css --routing --strict
+ng new ng-test --style=css --routing --strict
 ```
 
 ## 1.2. Add eslint

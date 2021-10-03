@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ng-jest-cypress-template": {
+    "ng-test": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ng-jest-cypress-template",
+            "outputPath": "dist/ng-test",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -63,10 +63,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "ng-jest-cypress-template:build:production"
+              "browserTarget": "ng-test:build:production"
             },
             "development": {
-              "browserTarget": "ng-jest-cypress-template:build:development"
+              "browserTarget": "ng-test:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -74,7 +74,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ng-jest-cypress-template:build"
+            "browserTarget": "ng-test:build"
           }
         },
         "test": {
@@ -98,7 +98,7 @@
       }
     }
   },
-  "defaultProject": "ng-jest-cypress-template",
+  "defaultProject": "ng-test",
   "cli": {
     "defaultCollection": "@angular-eslint/schematics"
   }
