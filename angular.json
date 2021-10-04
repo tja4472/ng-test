@@ -55,6 +55,30 @@
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true
+            },
+            "emulator": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.emulator.ts"
+                }
+              ]
+            },
+            "emulator-demo": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.emulator-demo.ts"
+                }
+              ]
+            },
+            "emulator-real": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.emulator-real.ts"
+                }
+              ]
             }
           },
           "defaultConfiguration": "production"
@@ -67,6 +91,15 @@
             },
             "development": {
               "browserTarget": "ng-test:build:development"
+            },
+            "emulator": {
+              "browserTarget": "ng-test:build:emulator"
+            },
+            "emulator-demo": {
+              "browserTarget": "ng-test:build:emulator-demo"
+            },
+            "emulator-real": {
+              "browserTarget": "ng-test:build:emulator-real"
             }
           },
           "defaultConfiguration": "development"
