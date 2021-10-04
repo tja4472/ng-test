@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ng-test": {
+    "ng-angularfire-testbed": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ng-test",
+            "outputPath": "dist/ng-angularfire-testbed",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -87,19 +87,19 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "ng-test:build:production"
+              "browserTarget": "ng-angularfire-testbed:build:production"
             },
             "development": {
-              "browserTarget": "ng-test:build:development"
+              "browserTarget": "ng-angularfire-testbed:build:development"
             },
             "emulator": {
-              "browserTarget": "ng-test:build:emulator"
+              "browserTarget": "ng-angularfire-testbed:build:emulator"
             },
             "emulator-demo": {
-              "browserTarget": "ng-test:build:emulator-demo"
+              "browserTarget": "ng-angularfire-testbed:build:emulator-demo"
             },
             "emulator-real": {
-              "browserTarget": "ng-test:build:emulator-real"
+              "browserTarget": "ng-angularfire-testbed:build:emulator-real"
             }
           },
           "defaultConfiguration": "development"
@@ -107,7 +107,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ng-test:build"
+            "browserTarget": "ng-angularfire-testbed:build"
           }
         },
         "test": {
@@ -131,7 +131,7 @@
       }
     }
   },
-  "defaultProject": "ng-test",
+  "defaultProject": "ng-angularfire-testbed",
   "cli": {
     "defaultCollection": "@angular-eslint/schematics"
   }
